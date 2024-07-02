@@ -30,7 +30,7 @@ class BookValidationTests {
         Set<ConstraintViolation<Book>> violations = validator.validate(book);
         assertThat(violations).isEmpty();
     }
-/*
+
     @Test
     void whenIsbnNotDefinedThenValidationFails() {
         var book = new Book("", "Title", "Author", 9.90);
@@ -96,5 +96,5 @@ class BookValidationTests {
         assertThat(violations.iterator().next().getMessage())
                 .isEqualTo("The book price must be greater than zero.");
     }
-*/
+
 }
