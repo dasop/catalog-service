@@ -38,7 +38,7 @@ class CatalogServiceApplicationTests {
                     assertThat(actualBook.isbn()).isEqualTo(expectedBook.isbn());
                 });
     }
-/*
+
     @Test
     void whenPostRequestThenBookCreated() {
         var expectedBook = new Book("1231231231", "Title", "Author", 9.90);
@@ -107,5 +107,5 @@ class CatalogServiceApplicationTests {
                     assertThat(errorMessage).isEqualTo("The book with ISBN " + bookIsbn + " was not found.")
                 );
     }
-*/
+
 }
